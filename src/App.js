@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import data from "./data";
+import List from "./List";
+import Button from "@material-ui/core/Button";
 
-function App() {
+const App = () => {
+  const [reminder, setReminder] = useState(data); // initialValue = array
+
+  // function to clear reminders
+  const clearReminder = () => {
+    setReminder([]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <main>
+      <section>
+        <h2>Birthday Reminder</h2>
+        <h3>{reminder.length} birthdays today</h3>
+        <List reminder={reminder} />
+
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={clearReminder}
+          className="btn"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          Clear
+        </Button>
+      </section>
+    </main>
   );
-}
+};
 
 export default App;
