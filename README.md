@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-You can view my deployed app at :- https://sahil9818336328.github.io/testing/
+You can view my deployed app at :-  https://sahil9818336328.github.io/BirthdayReminder/
 
 ## Available Scripts
 
