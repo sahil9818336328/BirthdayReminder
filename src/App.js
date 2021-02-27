@@ -14,7 +14,6 @@ const App = () => {
   return (
     <main>
       <section>
-        <h2>Birthday Reminder</h2>
         <h3>{reminder.length} birthdays today</h3>
         <List reminder={reminder} />
 
