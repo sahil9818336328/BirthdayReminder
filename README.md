@@ -2,7 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-View my deployed app at :-  https://birthday-reminder-react-1.netlify.app/
+View my deployed app at :-  
+
 ## Available Scripts
 
 In the project directory, you can run:
